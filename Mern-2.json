@@ -1,0 +1,17 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "Mongo DB",
+    "React.js",
+    "Node.js",
+    "Express.js"
+  ],
+  "author": "Codegirls",
+  "license": "ISC"
+}
