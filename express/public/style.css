@@ -1,0 +1,13 @@
+.form{
+    background-color: aquamarine;
+    height: 100vh;
+    padding: 3% 2%;
+}
+
+.name{
+    display: block;
+
+}
+.submit-btn{
+    margin-top: 1%;
+}
