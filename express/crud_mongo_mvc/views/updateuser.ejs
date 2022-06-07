@@ -1,0 +1,23 @@
+<%- include('include/header'); %>
+    <h1>Update User</h1>
+    <form action="/users/update/<%=userData._id%>" method="POST">
+            <div>
+                <label for="">Name</label>
+                <input type="text" name="name" value="<%=userData.name%>" placeholder="Enter your name">
+            </div>
+            <div>
+                <label for="">Email</label>
+                <input type="email" name="email" value="<%=userData.email%>" placeholder="Enter your item email">
+            </div>
+            <div>
+                <label for="">Password</label>
+                <input type="password" name="password" value="<%=userData.password%>" placeholder="Enter your password">
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+    </form>
+
+    </body>
+
+    </html>

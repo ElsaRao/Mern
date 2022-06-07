@@ -1,0 +1,40 @@
+<%- include('include/header'); %>
+<h1>Users List</h1>
+<table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <!-- <th>Password</th> -->
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(let user of locals.userData){ %>
+                <tr>
+                    <td>
+                        <%= user._id%>
+                    </td>
+                    <td>
+                        <%= user.name %>
+                    </td>
+                    <td>
+                        <%= user.email %>
+                    </td>
+                    <!-- <td>
+                        <%= user.brand %>
+                    </td> -->
+                    <td>
+                        <a href="http://localhost:8080/users/update/<%=user._id%>" class="edit"
+                            data-toggle="modal">Edit</a>
+                        <a href="http://localhost:8080/users/delete/<%=user._id%>" class="delete">Delete`</a>
+                    </td>
+                </tr>
+                <% } %>
+        </tbody>
+    </table>
+
+    </body>
+
+    </html>

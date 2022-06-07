@@ -1,0 +1,22 @@
+<%- include('include/header'); %>
+  <h1>Add User</h1>
+    <form action="/users/add" method="POST">
+        <div>
+            <label for="">Username</label>
+            <input type="text" name="name" placeholder="Enter your name">
+        </div>
+        <div>
+            <label for="">Email</label>
+            <input type="email" name="email" placeholder="Enter your item email">
+        </div>
+        <div>
+            <label for="">Password</label>
+            <input type="password" name="password" placeholder="Enter your password">
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+</body>
+</html>
