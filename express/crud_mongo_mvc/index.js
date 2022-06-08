@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({extended:false}));
 
 app.use('/users', router);
 app.set('view engine', 'ejs');
-app.use('/cosmetic', express.static(path.join(__dirname, 'public/assets/css')))
+app.use('/user', express.static(path.join(__dirname, 'public/assets/css')))
 
 // dbData();
 
